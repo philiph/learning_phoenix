@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :learning_phoenix, LearningPhoenix.Repo,
-  username: "postgres",
-  password: "postgres",
+  # username: "postgres",
+  # password: "postgres",
   database: "learning_phoenix_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
