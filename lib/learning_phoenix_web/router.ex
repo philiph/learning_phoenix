@@ -21,9 +21,11 @@ defmodule LearningPhoenixWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", LearningPhoenixWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", LearningPhoenixWeb do
+    pipe_through :api
+
+    get "/ping", Api.PingController, :index
+  end
 
   # Enables LiveDashboard only for development
   #
